@@ -4,6 +4,7 @@ import android.Manifest;
 import android.app.Dialog;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.graphics.Typeface;
 import android.net.Uri;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.TabLayout;
@@ -42,14 +43,15 @@ public class MainActivity extends AppCompatActivity {
     private ImageView imageView ;
     private ArrayList<Contact> arrayContact;
     private ContactAdapter adapter;
-
+    Typeface typeface;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        init();
         setWidget();
         checkAndRequestPermissions();
-        init();
+
     }
 
     @Override
@@ -74,6 +76,11 @@ public class MainActivity extends AppCompatActivity {
         lvContact = (ListView) findViewById(R.id.lv_contact);
         btnAddContact = (ImageView) findViewById(R.id.donee);
         imageView = ( ImageView)findViewById(R.id.imageVieww) ;
+        typeface = Typeface.createFromAsset(getAssets(), "RobotoThinItalic.ttf");
+        edtName.setTypeface(typeface);
+        edtNumber.setTypeface(typeface);
+        edtdate.setTypeface(typeface);
+        edtemail.setTypeface(typeface);
         b1 = (ImageView) findViewById(R.id.cancell);
         arrayContact = new ArrayList<>();
         adapter = new ContactAdapter(MainActivity.this, R.layout.item_contact_listview, arrayContact);

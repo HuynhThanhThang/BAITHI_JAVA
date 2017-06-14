@@ -43,5 +43,31 @@
             android:textColor="#476a30"
             android:textSize="20sp"
             android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tv_datett"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center"
+            android:text="0933 933 xxx"
+            android:textColor="#476a30"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tv_emailii"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center"
+            android:text="0933 933 xxx"
+            android:textColor="#476a30"
+            android:textSize="20sp"
+            android:textStyle="bold" />
     </LinearLayout>
 </LinearLayout>
