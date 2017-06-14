@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="customlistviewcustomlistview.cheng.com.baithuchanhso3.Favorite">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/avatar" />
+
+            <EditText
+                android:id="@+id/editnhapp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:fontFamily="RobotoThinItalic.ttf"
+                android:hint="Add Name"
+                android:textColor="#86af49"
+                android:textColorHint="#86af49"
+                android:textSize="20sp" />
+
+
+        </TableRow>
+
+        <TableRow android:gravity="left">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/call" />
+
+            <EditText
+                android:id="@+id/editphonee"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Add Number"
+                android:lines="1"
+                android:textColor="#86af49"
+                android:textColorHint="#86af49"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow android:gravity="left">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/calendar" />
+
+            <EditText
+                android:id="@+id/editdatee"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Add Birthday"
+                android:lines="1"
+                android:textColor="#86af49"
+                android:textColorHint="#86af49"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow android:gravity="left">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/mail" />
+
+            <EditText
+                android:id="@+id/editemaill"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Add Email"
+                android:lines="1"
+                android:textColor="#86af49"
+                android:textColorHint="#86af49"
+                android:textSize="20sp" />
+        </TableRow>
+    </TableLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/cancelll"
+            android:src="@drawable/cancel"/>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/doneee"
+            android:layout_marginLeft="50dp"
+            android:src="@drawable/done"/>
+    </LinearLayout>
+</LinearLayout>

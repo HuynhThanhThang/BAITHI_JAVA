@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#476a30"
+    android:orientation="horizontal"
+    android:padding="@dimen/activity_horizontal_margin">
+
+    <ImageView
+        android:id="@+id/btn_call"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:src="@drawable/call"
+        android:text="@string/call" />
+
+    <ImageView
+        android:id="@+id/btn_send_message"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:src="@drawable/text"
+        android:text="@string/send_message" />
+
+    <ImageView
+        android:id="@+id/btn_edit"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:src="@drawable/edit"
+        android:text="@string/send_message" />
+
+    <ImageView
+        android:id="@+id/bt_delete"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/delete"
+        android:layout_weight="1"
+        android:text="@string/send_message" />
+</LinearLayout>
